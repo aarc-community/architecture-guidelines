@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://devenv.sh/devenv.schema.json
+#
+# The toolchain, the AARC extension and the aarc-* commands come from the
+# aarc-publishing repository. devenv.lock pins the commit used, and
+# `devenv update` moves to the newest one.
+#
+# To build against a checkout of aarc-publishing next to this one instead, put
+# the input in devenv.local.yaml, which is not committed:
+#
+#   inputs:
+#     aarc-publishing:
+#       url: path:../aarc-publishing
+#       flake: false
+inputs:
+  nixpkgs:
+    url: github:cachix/devenv-nixpkgs/rolling
+  aarc-publishing:
+    url: github:AARC-Community/aarc-publishing
+    flake: false
+imports:
+  - aarc-publishing

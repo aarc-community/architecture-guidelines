@@ -1,0 +1,123 @@
+[
+  {
+    "id": "AARC-G045",
+    "citation-label": "AARC-G045",
+    "type": "report",
+    "title": "AARC Blueprint Architecture 2019",
+    "author": [
+      { "literal": "AARC Community members" },
+      { "literal": "AppInt members" },
+      { "family": "Liampotis", "given": "Nicolas", "suffix": "ed." }
+    ],
+    "issued": { "date-parts": [[2019, 11]] },
+    "DOI": "10.5281/zenodo.3672784",
+    "URL": "https://aarc-community.org/guidelines/aarc-g045/"
+  },
+  {
+    "id": "AARC-G052",
+    "citation-label": "AARC-G052",
+    "type": "report",
+    "title": "OAuth 2.0 Proxied Token Introspection",
+    "author": [
+      { "literal": "AARC Community members" },
+      { "literal": "AppInt members" }
+    ],
+    "issued": { "date-parts": [[2023, 11]] },
+    "DOI": "10.5281/zenodo.15334672",
+    "URL": "https://aarc-community.org/guidelines/aarc-g052/"
+  },
+  {
+    "id": "AARC-G056",
+    "citation-label": "AARC-G056",
+    "type": "report",
+    "title": "AARC Profile for Expressing Identity Attributes",
+    "note": "Unpublished",
+    "URL": "https://aarc-community.org/guidelines/aarc-g056"
+  },
+  {
+    "id": "AARC-I058",
+    "citation-label": "AARC-I058",
+    "type": "report",
+    "title": "Methods for Establishing Trust between OAuth 2.0 Proxies in Different Trust Domains",
+    "URL": "https://aarc-community.org/guidelines/aarc-i058"
+  },
+  {
+    "id": "AARC-G080",
+    "citation-label": "AARC-G080",
+    "type": "report",
+    "title": "AARC Blueprint Architecture 2025",
+    "URL": "https://aarc-community.org/guidelines/aarc-g080"
+  },
+  {
+    "id": "OIDC-Core",
+    "citation-label": "OIDC-Core",
+    "type": "report",
+    "title": "OpenID Connect Core 1.0",
+    "URL": "https://openid.net/specs/openid-connect-core-1_0.html"
+  },
+  {
+    "id": "OID-Fed",
+    "citation-label": "OID-Fed",
+    "type": "report",
+    "title": "OpenID Federation 1.0",
+    "author": [
+      { "family": "Hedberg", "given": "R.", "suffix": "Ed." },
+      { "family": "Jones", "given": "M.B." },
+      { "family": "Solberg", "given": "A.Å." },
+      { "family": "Bradley", "given": "J." },
+      { "family": "De Marco", "given": "G." },
+      { "family": "Dzhuvinov", "given": "V." }
+    ],
+    "issued": { "date-parts": [[2024, 8]] },
+    "note": "Draft 37",
+    "URL": "https://openid.net/specs/openid-federation-1_0.html"
+  },
+  {
+    "id": "RFC2119",
+    "citation-label": "RFC2119",
+    "type": "report",
+    "title": "Key words for use in RFCs to Indicate Requirement Levels",
+    "author": [{ "family": "Bradner", "given": "S." }],
+    "issued": { "date-parts": [[1997, 3]] },
+    "note": "BCP 14, RFC 2119",
+    "DOI": "10.17487/RFC2119",
+    "URL": "https://www.rfc-editor.org/info/rfc2119"
+  },
+  {
+    "id": "RFC6749",
+    "citation-label": "RFC6749",
+    "type": "report",
+    "title": "The OAuth 2.0 Authorization Framework",
+    "author": [{ "family": "Hardt", "given": "D.", "suffix": "Ed." }],
+    "issued": { "date-parts": [[2012, 10]] },
+    "note": "RFC 6749",
+    "DOI": "10.17487/RFC6749",
+    "URL": "https://www.rfc-editor.org/info/rfc6749"
+  },
+  {
+    "id": "RFC7519",
+    "citation-label": "RFC7519",
+    "type": "report",
+    "title": "JSON Web Token (JWT)",
+    "author": [
+      { "family": "Jones", "given": "M." },
+      { "family": "Bradley", "given": "J." },
+      { "family": "Sakimura", "given": "N." }
+    ],
+    "issued": { "date-parts": [[2015, 5]] },
+    "note": "RFC 7519",
+    "DOI": "10.17487/RFC7519",
+    "URL": "https://www.rfc-editor.org/rfc/rfc7519"
+  },
+  {
+    "id": "RFC7662",
+    "citation-label": "RFC7662",
+    "type": "report",
+    "title": "OAuth 2.0 Token Introspection",
+    "author": [{ "family": "Richer", "given": "J." }],
+    "issued": { "date-parts": [[2015, 10]] },
+    "note": "RFC 7662",
+    "DOI": "10.17487/RFC7662",
+    "URL": "https://www.rfc-editor.org/rfc/rfc7662"
+  }
+]

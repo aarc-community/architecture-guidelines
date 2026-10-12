@@ -1,0 +1,51 @@
+# Build every guideline as PDF, check it, and keep the PDFs as an artifact of
+# the run. The toolchain and the AARC design come from aarc-publishing, at the
+# commit devenv.lock pins.
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      # A lock written with devenv.local.yaml in place pins a checkout next to
+      # this one, which a runner does not have. Fail with the reason rather than
+      # with an error from Nix.
+      - name: Check that devenv.lock pins aarc-publishing from GitHub
+        run: |
+          type=$(jq -r '.nodes["aarc-publishing"].locked.type // "missing"' devenv.lock)
+          if [ "$type" != "github" ]; then
+            echo "::error file=devenv.lock::devenv.lock pins aarc-publishing as '$type', not from GitHub. Run 'devenv update aarc-publishing' without devenv.local.yaml and commit devenv.lock."
+            exit 1
+          fi
+
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v17
+        with:
+          name: devenv
+      - name: Install devenv
+        run: nix profile install nixpkgs#devenv
+
+      - name: Build and check the guidelines
+        run: devenv shell -- just ci
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: guidelines
+          path: generated/guidelines/**/*.pdf
+          if-no-files-found: error
