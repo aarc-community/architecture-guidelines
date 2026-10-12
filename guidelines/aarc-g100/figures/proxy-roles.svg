@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" font-family="Liberation Sans, Arial, sans-serif" font-size="15">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+  </defs>
+  <rect x="235" y="10" width="110" height="54" fill="#9fc5e8" stroke="#000"/>
+  <text x="290" y="33" text-anchor="middle">Trust</text>
+  <text x="290" y="52" text-anchor="middle">Authority</text>
+  <line x1="290" y1="64" x2="130" y2="148" stroke="#000" marker-end="url(#b)"/>
+  <line x1="290" y1="64" x2="450" y2="148" stroke="#000" marker-end="url(#b)"/>
+  <rect x="70" y="150" width="130" height="46" fill="#ffe599" stroke="#000"/>
+  <text x="135" y="172" text-anchor="middle">Proxy A</text>
+  <rect x="380" y="150" width="130" height="46" fill="#ffe599" stroke="#000"/>
+  <text x="445" y="172" text-anchor="middle">Proxy B</text>
+  <g fill="#b6d7a8" stroke="#000">
+    <rect x="40" y="185" width="86" height="40"/>
+    <rect x="132" y="185" width="86" height="40"/>
+    <rect x="350" y="185" width="86" height="40"/>
+    <rect x="442" y="185" width="86" height="40"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="83" y="210">Client_A</text>
+    <text x="175" y="210">AS_A</text>
+    <text x="393" y="210">Client_B</text>
+    <text x="485" y="210">AS_B</text>
+  </g>
+  <path d="M83,225 C100,330 470,330 485,225" fill="none" stroke="#000" stroke-dasharray="4 3"/>
+  <text x="284" y="290" text-anchor="middle" font-size="13">establish trust</text>
+  <text x="460" y="22" font-size="12">Legend</text>
+  <rect x="460" y="32" width="26" height="14" fill="#b6d7a8" stroke="#000"/>
+  <text x="494" y="44" font-size="12">Role</text>
+  <line x1="460" y1="62" x2="486" y2="62" stroke="#000" marker-end="url(#b)"/>
+  <text x="494" y="60" font-size="12">Can issue statement</text>
+  <text x="494" y="74" font-size="12">about subordinate</text>
+</svg>

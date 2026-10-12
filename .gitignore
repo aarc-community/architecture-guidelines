@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+._*
+
+# Build output
+generated/
+guidelines/**/*.typ
+
+# Installed from aarc-publishing by `just`. devenv.lock pins the version.
+_extensions/
+
+# Quarto cache
+/.quarto/
+
+# devenv state. devenv.lock is committed.
+.devenv*
+devenv.local.nix
+devenv.local.yaml*
+
+# Word lock files
+~$*
+
+**/*.quarto_ipynb

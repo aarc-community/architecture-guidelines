@@ -1,0 +1,8 @@
+# Prettier formats the markdown and the guideline sources. Editors read this
+# file too, so a format on save gives the same result as `just fmt`.
+proseWrap: always
+printWidth: 80
+overrides:
+  - files: "*.qmd"
+    options:
+      parser: markdown

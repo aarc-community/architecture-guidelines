@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290" font-family="Liberation Sans, Arial, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+  </defs>
+  <rect x="160" y="10" width="160" height="56" fill="#9fc5e8" stroke="#000"/>
+  <text x="240" y="33" text-anchor="middle">Trust Authority</text>
+  <text x="240" y="52" text-anchor="middle">R&amp;E AAI Fed (Domain C)</text>
+  <path d="M240,66 V150 H80 V222" fill="none" stroke="#000" marker-end="url(#a)"/>
+  <path d="M240,150 H400 V222" fill="none" stroke="#000" marker-end="url(#a)"/>
+  <rect x="10" y="224" width="140" height="56" fill="#ffe599" stroke="#000"/>
+  <text x="80" y="247" text-anchor="middle">SP-IdP-Proxy</text>
+  <text x="80" y="266" text-anchor="middle">(Domain A)</text>
+  <rect x="330" y="224" width="140" height="56" fill="#ffe599" stroke="#000"/>
+  <text x="400" y="247" text-anchor="middle">SP-IdP-Proxy</text>
+  <text x="400" y="266" text-anchor="middle">(Domain B)</text>
+  <line x1="150" y1="262" x2="330" y2="262" stroke="#000" stroke-width="2" stroke-dasharray="2 5"/>
+  <text x="240" y="245" text-anchor="middle" font-size="12">No direct trust</text>
+  <text x="240" y="258" text-anchor="middle" font-size="12">relationship</text>
+</svg>

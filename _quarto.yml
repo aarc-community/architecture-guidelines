@@ -1,0 +1,11 @@
+# The AARC guidelines. Each guideline is a directory under guidelines/, holding
+# the document, its figures and its references.json. The design comes from the
+# AARC extension, which `just` installs from aarc-publishing before each build.
+
+project:
+  type: default
+  output-dir: generated
+  render:
+    - guidelines/*/*.qmd
+
+format: aarc-typst
